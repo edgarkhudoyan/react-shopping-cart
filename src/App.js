@@ -18,7 +18,10 @@ function App() {
       .then((data) => setData(data.products));
   }, []);
 
-  // console.log(data);
+  // Delete Cart Item
+  const deleteCartItem = (id) => {
+    setCartInfo(cartInfo.filter((cartItem) => cartItem.id !== id));
+  };
   return (
     <div className='App'>
       <Nav
@@ -31,6 +34,7 @@ function App() {
         cartInfo={cartInfo}
         setCartInfo={setCartInfo}
         isVisible={isVisible}
+        deleteCartItem={deleteCartItem}
       />
     </div>
   );
