@@ -1,0 +1,17 @@
+.ProductList {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 5rem;
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(119, 119, 215, 1) 0%,
+    rgba(102, 132, 221, 1) 60%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}

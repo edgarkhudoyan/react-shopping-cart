@@ -1,0 +1,18 @@
+.Nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  position: fixed;
+  width: 100%;
+
+  .faIcon {
+    cursor: pointer;
+  }
+}
+
+.cartFull {
+  border-bottom: 2px solid red;
+}
