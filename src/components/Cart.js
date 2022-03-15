@@ -16,6 +16,7 @@ const Cart = ({ cartInfo, setCartInfo, isVisible, deleteCartItem }) => {
           cartInfo={cartInfo}
           setCartInfo={setCartInfo}
           deleteCartItem={deleteCartItem}
+          key={e.id}
         />
       ))}
       <CartPrice cartInfo={cartInfo} />
