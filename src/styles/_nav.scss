@@ -10,9 +10,16 @@
 
   .faIcon {
     cursor: pointer;
+    font-size: 24px;
   }
 }
 
 .cartFull {
-  border-bottom: 2px solid red;
+  color: rgb(255, 0, 119);
+}
+
+.Nav-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

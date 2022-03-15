@@ -11,13 +11,7 @@ const Cart = ({ cartInfo, setCartInfo, isVisible, deleteCartItem }) => {
     <div className={`Cart ${isVisible ? 'showCart' : ''}`}>
       <CartAbout clearCartHandler={clearCartHandler} />
       {cartInfo.map((e) => (
-        <CartItem
-          e={e}
-          cartInfo={cartInfo}
-          setCartInfo={setCartInfo}
-          deleteCartItem={deleteCartItem}
-          key={e.id}
-        />
+        <CartItem e={e} deleteCartItem={deleteCartItem} key={e.id} />
       ))}
       <CartPrice cartInfo={cartInfo} />
     </div>

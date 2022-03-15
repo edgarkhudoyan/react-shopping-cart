@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const CartItem = ({ e, cartInfo, setCartInfo, deleteCartItem }) => {
+const CartItem = ({ e, deleteCartItem }) => {
   return (
     <div className='CartItem'>
       <img src={e.images[0]} alt='' />

@@ -9,11 +9,24 @@ const Nav = ({ isVisible, setIsVisible, cartInfo }) => {
   return (
     <div className='Nav'>
       <h1>Shopping Centre</h1>
-      <FontAwesomeIcon
-        className={`faIcon ${cartInfo.length > 0 ? 'cartFull' : ''}`}
-        icon={faBasketShopping}
-        onClick={isVisibleHandler}
-      />
+      <div className='Nav-cart'>
+        <FontAwesomeIcon
+          className={`faIcon ${cartInfo.length > 0 ? 'cartFull' : ''}`}
+          icon={faBasketShopping}
+          onClick={isVisibleHandler}
+        />
+        <h3
+          style={{
+            color: 'white',
+            padding: '0.3rem',
+            borderRadius: '50%',
+            cursor: 'pointer',
+          }}
+          onClick={isVisibleHandler}
+        >
+          {cartInfo.length > 0 ? cartInfo.length : ''}
+        </h3>
+      </div>
     </div>
   );
 };
