@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBasketShopping } from '@fortawesome/free-solid-svg-icons';
+import CartItem from './CartItem';
 
 const Product = ({ prod, cartInfo, setCartInfo }) => {
   const addCartHandler = () => {
